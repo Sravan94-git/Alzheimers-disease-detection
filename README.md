@@ -26,24 +26,7 @@ To tackle class imbalance, a common issue in medical datasets, the **Synthetic M
 
 ***
 
-### ⚙️ Methodology
 
-The project workflow is structured as follows:
-
-1.  **Data Collection:** Utilization of a standard medical imaging dataset for Alzheimer's disease.
-2.  **Data Preprocessing:**
-    * Cleaning and resizing of images to a uniform dimension.
-    * Creation of two distinct datasets: the original (RGB) and a version converted to HSV color space.
-    * Application of **SMOTE** to the training set to balance the distribution of diagnostic classes (e.g., Non-Demented, Mild Demented, etc.).
-3.  **Model Training:**
-    * Training four separate models (Custom CNN, AlexNet, DenseNet, ResNet) on the original preprocessed dataset.
-    * Training the same four models on the HSV preprocessed dataset.
-4.  **Model Evaluation:**
-    * Assessing the performance of each model using key metrics such as accuracy, precision, recall, and F1-score.
-    * Generating confusion matrices to visualize classification performance.
-5.  **Comparative Analysis:** Comparing the results to determine the best-performing model-and-dataset combination.
-
-***
 
 ### 📊 Results & Findings
 
@@ -51,7 +34,6 @@ The project workflow is structured as follows:
 * On the **HSV-converted dataset**, the **DenseNet** architecture demonstrated superior performance.
 * The use of SMOTE was crucial in improving the models' ability to correctly identify minority classes, which is often the most critical task in disease diagnosis.
 
-*(You could add a results table or confusion matrix image here for better visualization)*
 
 ***
 
@@ -66,36 +48,3 @@ The project workflow is structured as follows:
 
 ***
 
-### 🚀 Getting Started
-
-Follow these instructions to set up and run the project locally.
-
-#### 1. Prerequisites
-
-* Python 3.8 or newer
-* `pip` or `conda` package manager
-
-#### 2. Clone the Repository
-
-```
-git clone https://github.com/Sravan94-git/Alzheimers-disease-detection.git
-cd Alzheimers-disease-detection
-```
-
-#### 3. Set Up the Dataset
-```
-This project requires a medical imaging dataset. A common choice is the Alzheimer's Dataset (4 class of images) available on Kaggle.
-1. Download the dataset from Kaggle.
-2. Unzip the folder and place it in the project's root directory.
-```
-#### 4. Install Dependencies
-```
-It is recommended to use a virtual environment.
-# Create and activate a virtual environment
-python -m venv venv
-source venv/bin/activate  # On macOS/Linux
-# venv\Scripts\activate    # On Windows
-
-# Install required packages
-pip install -r requirements.txt
-```
