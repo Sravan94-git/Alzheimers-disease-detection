@@ -8,13 +8,6 @@ This project addresses the challenge of ambiguous Alzheimer's disease diagnosis 
 
 ***
 
-### 📌 Project Overview
-
-The core of this project is to enhance the precision of Alzheimer's diagnosis using four distinct deep learning models: **CNN, AlexNet, DenseNet, and ResNet**. A key aspect of the research involves a comparative analysis of model performance on the original image dataset versus the same dataset converted to the HSV (Hue, Saturation, Value) color space.
-
-To tackle class imbalance, a common issue in medical datasets, the **Synthetic Minority Oversampling Technique (SMOTE)** is used. The project not only aims for high accuracy but also for model transparency, providing understandable explanations for the models' predictions to assist doctors in patient care.
-
-***
 
 ### ✨ Key Features
 
@@ -23,17 +16,6 @@ To tackle class imbalance, a common issue in medical datasets, the **Synthetic M
 * **Class Imbalance Handling:** Utilizes SMOTE to create a balanced dataset, preventing model bias towards the majority class and improving minority class detection.
 * **High Diagnostic Accuracy:** Achieved excellent results, with **CNN** being the top performer on original images and **DenseNet** on HSV images.
 * **Explainable AI (XAI):** Focuses on model interpretability, allowing clinicians to understand the "why" behind a diagnosis, thereby increasing trust and confidence in the system.
-
-***
-
-
-
-### 📊 Results & Findings
-
-* On the **original (RGB) dataset**, the custom **Convolutional Neural Network (CNN)** achieved the highest diagnostic accuracy.
-* On the **HSV-converted dataset**, the **DenseNet** architecture demonstrated superior performance.
-* The use of SMOTE was crucial in improving the models' ability to correctly identify minority classes, which is often the most critical task in disease diagnosis.
-
 
 ***
 
